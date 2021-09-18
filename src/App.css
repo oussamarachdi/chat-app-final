@@ -36,9 +36,18 @@
     transform: rotate(360deg);
   }
 }
+/* ---------------------------------------------------------------- */
+
+:root {
+  --primariary-puple: #4d426d;
+  --primary-light-purple: #5c4f82;
+  --primary-lighter-purple: #786c97;
+  --primary-white: #fcfbfd;
+  --primary-orange: #f0aa87;
+}
 
 body {
-  background-color: #4d426d !important;
+  background-color: var(--primariary-puple) !important;
 }
 
 /* ******************** Navbar ************************ */
@@ -46,11 +55,11 @@ body {
   background: transparent !important;
 }
 .navbar-brand {
-  color: #fcfbfd !important;
+  color: var(--primary-white) !important;
 }
 
 .nav-link {
-  color: #fcfbfd !important;
+  color: var(--primary-white) !important;
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 0.6px;
@@ -59,11 +68,81 @@ body {
   margin-right: 0.75rem;
   margin-left: 00.75rem;
 }
+.navbar-toggler {
+  color: transparent;
+}
 
 .nav-link:focus {
-  color: #f0aa87 !important;
-  border-bottom: 2px solid #f0aa87;
+  color: var(--primary-orange) !important;
+  border-bottom: 2px solid var(--primary-orange);
 }
 .icon {
-  color: #fcfbfd;
+  color: var(--primary-white);
+}
+
+/* ******************** Header ************************ */
+.Header {
+  width: 100%;
+  margin-left: 20px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.SearchBar {
+  display: inline;
+  border: 2px solid transparent;
+  background-color: var(--primary-light-purple);
+  border-radius: 100px;
+  padding: 10px 15px;
+  transition: background-color 0.5 ease-in-out;
+}
+.SearchBar input {
+  border: 0;
+  background: none;
+  width: 300px;
+  height: 20px;
+  color: #000;
+  margin: 0.6rem;
+}
+.SearchBar input::placeholder {
+  color: var(--primary-lighter-purple);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.SearchBar input:focus {
+  outline: none;
+}
+.search-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.search-icon {
+  color: var(--primary-lighter-purple);
+}
+
+.Buttons {
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.Buttons .btn {
+  border: 2px solid var(--primary-lighter-purple);
+  border-radius: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 1rem;
+  font-size: small;
+  margin-right: 10px;
+  color: var(--primary-white);
+}
+.Buttons .btn:hover,
+.Buttons .btn:focus {
+  border: 2px solid var(--primary-orange);
+  color: var(--primary-orange);
 }
