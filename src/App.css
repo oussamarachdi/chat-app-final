@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: #4d426d !important;
+}
+
+/* ******************** Navbar ************************ */
+.navbar {
+  background: transparent !important;
+}
+.navbar-brand {
+  color: #fcfbfd !important;
+}
+
+.nav-link {
+  color: #fcfbfd !important;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+
+  margin-right: 0.75rem;
+  margin-left: 00.75rem;
+}
+
+.nav-link:focus {
+  color: #f0aa87 !important;
+  border-bottom: 2px solid #f0aa87;
+}
+.icon {
+  color: #fcfbfd;
+}
